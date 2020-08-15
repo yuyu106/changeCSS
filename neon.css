@@ -1,4 +1,4 @@
-body.neon {
+.neon {
     content: '';
     position: fixed;
     top: 0;
@@ -8,7 +8,7 @@ body.neon {
     background-color:#fff;  /* 背景カラー */
     margin: 0;
     background-image: url("./background.jpg");
-    background-size:cover;
+    background-size: cover;
 }
 /*
 body.fadeout::after {

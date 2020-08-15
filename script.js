@@ -1,8 +1,7 @@
 function cssTest() {
-    const body = document.getElementById("body");
     const cover = document.getElementById("cover");
     const inner = document.getElementById("inner")
-    body.animate({
+    inner.animate({
         opacity: [0, 1]
         }, {
         direction: 'reverse',
