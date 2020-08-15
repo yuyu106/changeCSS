@@ -1,0 +1,66 @@
+body.neon {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#fff;  /* 背景カラー */
+    margin: 0;
+}
+/*
+body.fadeout::after {
+    opacity: 1;
+}
+/*
+body.fadeout {
+    -webkit-transform:scale(2);
+    transform:scale(2);
+    -webkit-transition: transform .8s ease-out;
+    transition: transform .8s ease-out;
+}
+*/
+
+.neon #cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: -1;
+}
+
+.neon .center {
+    display: flex;
+
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.neon .inner {
+    text-align: center;
+}
+
+.neon .title {
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+    display: block;
+    font-size: 24px;
+    margin: 12px;
+}
+
+.neon a {
+    background-color: #ACDAB8;
+    border: 0.2vw solid #FEFAC8;
+    font-size: 18px;
+    padding: 6px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    text-decoration: none;
+    box-shadow: 0 0 0.25vw 0.16vw #024B5D;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #FEFAC8, 0 0 0.5em #FEFAC8, 0 0 0.1em #FEFAC8;
+    box-sizing: border-box;
+}
