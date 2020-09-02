@@ -1,0 +1,250 @@
+body{
+   /*
+    background:url(images/grunge.png) repeat 0 0, #f5f1e1; 
+    background:url(images/grunge.png) repeat 0 0, -moz-linear-gradient(top,  #ffefdd 0%, #f5e1ef 33%, #e9d7f1 66%, #bcd7f4 100%); 
+    background:url(images/grunge.png) repeat 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffefdd), color-stop(33%,#f5e1ef), color-stop(66%,#e9d7f1), color-stop(100%,#bcd7f4));
+    background:url(images/grunge.png) repeat 0 0, -webkit-linear-gradient(top,  #ffefdd 0%,#f5e1ef 33%,#e9d7f1 66%,#bcd7f4 100%); 
+    background:url(images/grunge.png) repeat 0 0, -ms-linear-gradient(top,  #ffefdd 0%,#f5e1ef 33%,#e9d7f1 66%,#bcd7f4 100%); 
+    background:url(images/grunge.png) repeat 0 0, linear-gradient(top,  #ffefdd 0%,#f5e1ef 33%,#e9d7f1 66%,#bcd7f4 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffefdd', endColorstr='#bcd7f4',GradientType=0 ); 
+    */
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.bg {
+    height: 100vh;
+    position: relative;
+}
+
+.bg_in {
+    background-image: linear-gradient(150deg, #FFFFFF 0%, #b0b7d6 100%);
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.text_area {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.text_area_inner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text_area h1{
+        color: #555;
+        margin: 0;
+        z-index: 100;
+        font-size: 48px; 
+        display: inline-box;
+        width: 100%;      
+}
+
+.text_area h1 span {
+    font-size: 24px; 
+    display: block;  
+}
+
+.box_wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    /*background: #4893c6;*/
+    background-image: url(./kasa.png);
+    background-size: cover;
+    opacity: .5;
+    border-radius: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /*animation:rotate_anime 10s infinite;*/
+}
+
+.box {
+    transition: .5s ;
+    transform: rotateZ( 0deg ) ;
+}
+
+.box_wrapper:hover .box{
+    transform: rotateZ( 180deg ) ;
+}
+/*
+@keyframes rotate_anime {
+    0% {
+        transform:rotate(0deg);
+    }
+    12.5% {
+        transform:rotate(45deg);
+    }
+    25% {
+        transform:rotate(90deg);
+    }
+    37.5% {
+        transform:rotate(135deg);
+    }
+    50% {
+        transform:rotate(180deg);
+    }
+    62.5% {
+        transform:rotate(225deg);
+    }
+    75% {
+        transform:rotate(270deg);
+    }
+    87.5% {
+        transform:rotate(315deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+*/
+
+.box_wrapper h4 {
+    color: #fff;
+    position: absolute;
+    margin: 0;
+
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.img {
+    position: absolute;
+    bottom: 0px;
+    right: -10%;
+    height: 300px;
+    width: 600px;
+    background-image: url(./113561.png);
+    background-size: 600px;
+    opacity: .7;
+    position: fixed;
+}
+
+.skill {
+    height: 100vh;
+    background: #000;
+    opacity: .5;
+}
+
+.borders {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.border {
+    height: 16px;
+    width: 80px;
+    background-image: url(./kasa_close.png);
+    background-size: 80px 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 5px;
+    transition: .4s ;
+    
+}
+
+.borders:hover .border3 {
+    transform: translate(0px, -60px) rotateZ( 90deg ) ;
+    height: 80px;
+    background-image: url(./kasa_open.png);
+    background-size: 80px 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.borders:hover .border1, .borders:hover .border2 {
+    transform: translate(150px, 0px) 
+}
+
+.border2 {
+    transition-delay: 0.05s;
+}
+
+.border3 {
+    transition-delay: 0.05s;
+}
+
+
+.borders2 {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.border21, .border22 {
+    box-sizing: border-box;
+    height: 80px;
+    width: 80px;
+    /*background: white;*/
+    background-image: url(./kasa_open.png);
+    background-size: 80px 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 5px;
+    transition: .5s ;
+    transform: translate(-150px, 0px) ;
+    padding-left: 32px;
+    padding-top: 16px;
+    
+}
+
+.border21 {
+    transform: translate(0px, 0px) rotateZ( 90deg );
+}
+
+.borders2:hover .border21 {
+    transform: translate(0px, 24px) rotateZ( 45deg ) ;
+    height: 16px;
+    background-image: url(./kasa_close.png);
+    background-size: 80px 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.borders2:hover .border22 {
+    transform: translate(0px, 6px) rotateZ( 135deg );
+    height: 16px;
+    background-image: url(./kasa_close.png);
+    background-size: 80px 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.border22 {
+    transition-delay: 0.05s;
+}
+
+.border23 {
+    transition-delay: 0.05s;
+}
+
+
+
+
+
